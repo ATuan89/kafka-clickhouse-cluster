@@ -1,0 +1,3 @@
+com/kafka/clickhouse/LogModel.class
+com/kafka/clickhouse/Producer.class
+com/kafka/clickhouse/KafkaConsumerVerticle.class

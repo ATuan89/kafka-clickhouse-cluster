@@ -1,0 +1,72 @@
+{
+  "clickhouse": [
+    {
+      "name": "clickhouse-01",
+      "url": "jdbc:clickhouse://172.21.0.5:8123/",
+      "database": "default",
+      "user": "default",
+      "password": "",
+      "table": "logs",
+      "insert_logs_query": "INSERT INTO logs (receive_time, services, source_host, remote_addr, body_bytes_sent, bytes_sent, request_time, status, request_uri, request_method, host, uri, hostname, http_referer, http_user_agent, upstream_response_time, upstream_host, upstream_cache_status, request_length, server_port, server_protocol, connection, connection_requests, isp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      "create_table_query": "CREATE TABLE IF NOT EXISTS default.logs (receive_time DateTime, services String, source_host String, remote_addr String, body_bytes_sent UInt64, bytes_sent UInt64, request_time Float64, status UInt16, request_uri String, request_method String, host String, uri String, hostname String, http_referer String, http_user_agent String, upstream_response_time Float64, upstream_host String, upstream_cache_status String, request_length UInt64, server_port UInt16, server_protocol String, connection UInt32, connection_requests UInt32, isp String) ENGINE = MergeTree ORDER BY receive_time SETTINGS index_granularity = 8192;"
+    },
+    {
+      "name": "clickhouse-02",
+      "url": "jdbc:clickhouse://172.21.0.8:8123/",
+      "database": "default",
+      "user": "default",
+      "password": "",
+      "table": "logs",
+      "insert_logs_query": "INSERT INTO logs (receive_time, services, source_host, remote_addr, body_bytes_sent, bytes_sent, request_time, status, request_uri, request_method, host, uri, hostname, http_referer, http_user_agent, upstream_response_time, upstream_host, upstream_cache_status, request_length, server_port, server_protocol, connection, connection_requests, isp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      "create_table_query": "CREATE TABLE IF NOT EXISTS default.logs (receive_time DateTime, services String, source_host String, remote_addr String, body_bytes_sent UInt64, bytes_sent UInt64, request_time Float64, status UInt16, request_uri String, request_method String, host String, uri String, hostname String, http_referer String, http_user_agent String, upstream_response_time Float64, upstream_host String, upstream_cache_status String, request_length UInt64, server_port UInt16, server_protocol String, connection UInt32, connection_requests UInt32, isp String) ENGINE = MergeTree ORDER BY receive_time SETTINGS index_granularity = 8192;"
+    },
+    {
+      "name": "clickhouse-03",
+      "url": "jdbc:clickhouse://172.21.0.4:8123/",
+      "database": "default",
+      "user": "default",
+      "password": "",
+      "table": "logs",
+      "insert_logs_query": "INSERT INTO logs (receive_time, services, source_host, remote_addr, body_bytes_sent, bytes_sent, request_time, status, request_uri, request_method, host, uri, hostname, http_referer, http_user_agent, upstream_response_time, upstream_host, upstream_cache_status, request_length, server_port, server_protocol, connection, connection_requests, isp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      "create_table_query": "CREATE TABLE IF NOT EXISTS default.logs (receive_time DateTime, services String, source_host String, remote_addr String, body_bytes_sent UInt64, bytes_sent UInt64, request_time Float64, status UInt16, request_uri String, request_method String, host String, uri String, hostname String, http_referer String, http_user_agent String, upstream_response_time Float64, upstream_host String, upstream_cache_status String, request_length UInt64, server_port UInt16, server_protocol String, connection UInt32, connection_requests UInt32, isp String) ENGINE = MergeTree ORDER BY receive_time SETTINGS index_granularity = 8192;"
+    },
+    {
+      "name": "clickhouse-04",
+      "url": "jdbc:clickhouse://172.21.0.3:8123/",
+      "database": "default",
+      "user": "default",
+      "password": "",
+      "table": "logs",
+      "insert_logs_query": "INSERT INTO logs (receive_time, services, source_host, remote_addr, body_bytes_sent, bytes_sent, request_time, status, request_uri, request_method, host, uri, hostname, http_referer, http_user_agent, upstream_response_time, upstream_host, upstream_cache_status, request_length, server_port, server_protocol, connection, connection_requests, isp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      "create_table_query": "CREATE TABLE IF NOT EXISTS default.logs (receive_time DateTime, services String, source_host String, remote_addr String, body_bytes_sent UInt64, bytes_sent UInt64, request_time Float64, status UInt16, request_uri String, request_method String, host String, uri String, hostname String, http_referer String, http_user_agent String, upstream_response_time Float64, upstream_host String, upstream_cache_status String, request_length UInt64, server_port UInt16, server_protocol String, connection UInt32, connection_requests UInt32, isp String) ENGINE = MergeTree ORDER BY receive_time SETTINGS index_granularity = 8192;"
+    },
+    {
+      "name": "clickhouse-05",
+      "url": "jdbc:clickhouse://172.21.0.6:8123/",
+      "database": "default",
+      "user": "default",
+      "password": "",
+      "table": "logs",
+      "insert_logs_query": "INSERT INTO logs (receive_time, services, source_host, remote_addr, body_bytes_sent, bytes_sent, request_time, status, request_uri, request_method, host, uri, hostname, http_referer, http_user_agent, upstream_response_time, upstream_host, upstream_cache_status, request_length, server_port, server_protocol, connection, connection_requests, isp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      "create_table_query": "CREATE TABLE IF NOT EXISTS default.logs (receive_time DateTime, services String, source_host String, remote_addr String, body_bytes_sent UInt64, bytes_sent UInt64, request_time Float64, status UInt16, request_uri String, request_method String, host String, uri String, hostname String, http_referer String, http_user_agent String, upstream_response_time Float64, upstream_host String, upstream_cache_status String, request_length UInt64, server_port UInt16, server_protocol String, connection UInt32, connection_requests UInt32, isp String) ENGINE = MergeTree ORDER BY receive_time SETTINGS index_granularity = 8192;"
+    },
+    {
+      "name": "clickhouse-06",
+      "url": "jdbc:clickhouse://172.21.0.7:8123/",
+      "database": "default",
+      "user": "default",
+      "password": "",
+      "table": "logs",
+      "insert_logs_query": "INSERT INTO logs (receive_time, services, source_host, remote_addr, body_bytes_sent, bytes_sent, request_time, status, request_uri, request_method, host, uri, hostname, http_referer, http_user_agent, upstream_response_time, upstream_host, upstream_cache_status, request_length, server_port, server_protocol, connection, connection_requests, isp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      "create_table_query": "CREATE TABLE IF NOT EXISTS default.logs (receive_time DateTime, services String, source_host String, remote_addr String, body_bytes_sent UInt64, bytes_sent UInt64, request_time Float64, status UInt16, request_uri String, request_method String, host String, uri String, hostname String, http_referer String, http_user_agent String, upstream_response_time Float64, upstream_host String, upstream_cache_status String, request_length UInt64, server_port UInt16, server_protocol String, connection UInt32, connection_requests UInt32, isp String) ENGINE = MergeTree ORDER BY receive_time SETTINGS index_granularity = 8192;"
+    }
+  ],
+  "kafka": {
+    "broker": "172.20.0.2:29092",
+    "topic": "test",
+    "group_id": "test-consumer-group",
+    "auto_offset_reset": "latest",
+    "enable_auto_commit": "false"
+  }
+}
+
